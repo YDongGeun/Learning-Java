@@ -5,7 +5,7 @@ class GymSuit {
         // 모든 학생들의 체육복 상태를 부여
         int[] student = new int[n];
         int answer = n;
-        
+
         // 체육복을 도난당한 학생들에게 -1의 상태를 부여
         for (int l : lost) student[l - 1]--;
         // 여벌의 체육복을 가져온 학생들에게 1의 상태를 부여
