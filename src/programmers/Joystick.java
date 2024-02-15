@@ -51,7 +51,7 @@ public class Joystick {
         for (nowCursor = 0; nowCursor < name.length(); nowCursor++) {
             fitLetter(name.charAt(nowCursor), answerName[nowCursor]);
             if (nowCursor != name.length() - 1) answer++;
-        }
+        } // 오른쪽으로 커서를 가도록
 
         return answer;
     }
