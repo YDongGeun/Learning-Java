@@ -13,6 +13,7 @@ public class StringUtils {
         return sb.toString();
     }
 
+    // 정적 내부 클래스로 구현.
     public static class CharChecker {
         public static int countChar(String str, char targetChar) {
             int count = 0;
@@ -26,6 +27,4 @@ public class StringUtils {
             return countChar(str, targetChar) > 0;
         }
     }
-
-
 }
