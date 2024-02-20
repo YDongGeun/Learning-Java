@@ -1,23 +1,28 @@
-package exercise.chapter_52;
+package exercise.chapter_53.learn_Enum;
 
 import exercise.chapter_52.exception.IDFormatException;
 import exercise.chapter_52.exception.PositiveNumberException;
+
+import java.time.LocalDate;
+import java.time.LocalDateTime;
 
 public class PTMember {
     private String ID;
     private String name;
     private Integer height;
     private Integer weight;
-    private String gender;
+    private Gender gender;
+    private LocalDateTime enrollTime;
 
     public PTMember(String name, Integer height, Integer weight, String gender) {
         if (height <= 0 || weight <= 0) {
-            throw new PositiveNumberException("키와 몸무게는 0이하 일 수 없습니다.");
+            throw new PositiveNumberException("키와 몸무게는 0이하일 수 없습니다.");
         }
         this.name = name;
         this.height = height;
         this.weight = weight;
-        this.gender = gender;
+        this.gender = Gender.valueOfTerm(gender);
+        this.enrollTime = LocalDateTime.now();
     }
 
     public void setID(String ID) {
@@ -35,6 +40,7 @@ public class PTMember {
                 ", height=" + height +
                 ", weight=" + weight +
                 ", gender='" + gender + '\'' +
+                ", enrollTime=" + enrollTime +
                 '}';
     }
 }
