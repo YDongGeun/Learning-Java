@@ -1,0 +1,10 @@
+Nike Cortez|10
+Air Force 1|4
+Nike Dunk|6
+Air Jordan 1|2
+Air Max 97|2
+Air Max 270|4
+Nike SB Dunk|6
+Nike Free Run|10
+React Element 55|3
+Air Max 90|5
